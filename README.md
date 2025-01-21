@@ -1,4 +1,6 @@
+# wather App using REACT project
 # React + Vite
+this app use for find weather in another place . using api find resulte of weather  and then show it .If not find resulte than handle in front end
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
