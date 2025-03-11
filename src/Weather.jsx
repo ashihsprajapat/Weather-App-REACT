@@ -2,7 +2,7 @@ import SearchBox from "./SearchBox";
 import InfoResult from './InfoResult';
 import { useState } from "react";
 function Weather() {
-    let [weatherInfo, setWeatherInfo]=useState({
+    let [weatherInfo, setWeatherInfo] = useState({
         city: "Jaipur",
         country: "IN",
         description: "mist",
@@ -14,18 +14,18 @@ function Weather() {
         tempMin: 16.62,
     })
 
-    let updateInfo=(newInfo)=>{
+    let updateInfo = (newInfo) => {
         setWeatherInfo(newInfo);
     }
-    return ( 
+    return (
         <>
-        <div style={{textAlign:"center"}}>
-            <h2>Weather App by Ashish</h2>
-            <SearchBox updateInfo={updateInfo}/>
-            <InfoResult info={weatherInfo}/>
-        </div>
+            <div style={{ textAlign: "center" }}>
+                <h2>Weather App by Ashish</h2>
+                <SearchBox updateInfo={updateInfo} />
+                <InfoResult info={weatherInfo} />
+            </div>
         </>
-     );
+    );
 }
 
 export default Weather;
